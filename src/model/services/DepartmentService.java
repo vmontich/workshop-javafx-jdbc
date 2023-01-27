@@ -20,6 +20,10 @@ public class DepartmentService {
 		} else {
 			departmentDAO.update(obj);
 		}
+	} 
+	
+	public void remove(Department obj) {
+		departmentDAO.deleteById(obj.getId());
 	}
 
 }
